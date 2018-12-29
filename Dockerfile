@@ -11,5 +11,5 @@ LABEL "com.github.actions.color"="red"
 
 RUN yarn global add sapper
 
-COPY "entrypoint.sh" "/entrypoint.sh"
+ADD entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
